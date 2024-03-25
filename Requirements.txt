@@ -1,0 +1,5 @@
+pip 23.2.1+
+
+Python 3.8+
+
+pip install torch torchvision torchaudio sentence-transformers -f https://download.pytorch.org/whl/cpu/torch_stable.html

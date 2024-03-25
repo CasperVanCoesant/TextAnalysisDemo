@@ -1,0 +1,5 @@
+In Terminal (zsh)
+
+-m venv venv
+
+source venv/bin/activate
