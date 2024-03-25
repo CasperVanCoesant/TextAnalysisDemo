@@ -1,2 +1,2 @@
 # TextAnalysisDemo
-Guide initiative a virtual environment with dependencies to run the SentencesTransformers package and execute a simple text analysis demo
+Guide initiate a virtual environment with dependencies to run the SentencesTransformers package and execute a simple text analysis demo
