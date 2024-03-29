@@ -1,0 +1,17 @@
+%pip install torch torchvision torchaudio sentence-transformers -f https://download.pytorch.org/whl/cpu/torch_stable.html
+
+from sentence_transformers import SentenceTransformer, util
+
+# Load a pre-trained model
+model = SentenceTransformer('all-MiniLM-L6-v2')
+
+# Define some sample text
+sentences = ["This is an example sentence", "Each sentence is converted into a vector"]
+
+# Encode sentences to get their embeddings
+sentence_embeddings = model.encode(sentences)
+
+# Compare sentences
+similarity = util.pytorch_cos_sim(sentence_embeddings[0], sentence_embeddings[1])
+
+print(f"Similarity between the sentences: {similarity.item()}")
